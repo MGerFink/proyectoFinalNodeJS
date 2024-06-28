@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pets and Cakes</title>
+        <link rel="icon" href="img/gato_fiesta.ico">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            article{display: flex;}
+            h4{width: 200px;}
+            #listado{display: contents;}
+            a{text-decoration: none; color: black;}
+        </style>
+</head>
+
+<body>
+    <header>
+    
+        <div>
+          <h1 class="titulo_p">PETS AND CAKES</h1>
+          <img id="logo" src="https://i.ibb.co/4PSxckp/logo.jpg" alt="logo">
+        </div>
+        
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="quienesSomos.html">¿Quiénes Somos?</a></li>
+              <li><a href="contacto.html">Conctacto</a></li>
+              <li><a href="festejos.html">Festejos</a></li>
+            </ul>
+          </nav>
+        </div>
+           
+    </header>
+
+    <main>
+
+    <div class="contenedor">
+      
+        <div class="contenedor_texto">
+          <h1 class="titulo">¡Festejos para mascotas!</h1>
+          <br>
+          <p>¡Festejos para mascotas! Es un emprendimiento que busca crear un espacio para los animales, donde puedan festejar con amigos y familiares.</p>
+          <br>
+          <p>Además, buscamos crear espacios amigables, sea en lugares públicos (como parques o plazas) como en salones, donde puedan encontrarse y pasar un buen momento. Elegí la temática, el contenido del festejo y el menú y nosotros nos ocupamos de todo.</p>
+          <br>  
+          <p>Estamos preparados para proporcionar un servicio de calidad, caulquiera sea tu mascota, para que pasen buenos momentos en familia.</p>
+        </div>
+        
+      </div>
+  
+      <!-- <a href="/dinamic/1"> Ir a la primera página dinámica</a> <br>
+      <a href="/dinamic/2"> Ir a la segunda página dinámica</a> 
+  
+      <a href="listado.html">Ir a Listado de Servicios</a> -->
+
+    <h2>LISTA DE PRODUCTOS Y SERVICIOS</h2>
+    <article>
+        <h4>Producto</h4>
+        <h4>Precio</h4>
+        <h4>Descripción</h4>        
+    </article>
+    <article id="listado">
+
+    </article>
+    <form action="/listado" method="POST">
+        <input type="text" name="item">
+        <input type="text" name="precio">
+        <input type="text" name="descripcion">
+        <input type="submit" value="CREAR NUEVO ITEM">
+    </form><br>
+
+    <!--form action="/landing?_method="PUT" method="POST">
+        <label>Actualizar: <input type="text" name="update"></label>
+        <input type="submit" value="PUT"
+    </form><br>
+    <form action="/landing?_method="DELETE" method="POST">
+        <label>Eliminar: <input type="text" name="delete"></label>
+        <input type="submit" value="DELETE"
+    </form-->
+    <script type="text/javascript" src="js/listado.js"></script>
+
+    </main>
+
+    <footer>
+
+      <div class="footer">
+          <h3>Seguinos en las redes</h3>
+          <h4>©Copyright 2024. Todos los derechos reservados.</h4>
+          <h4>By Desarrollos Inteligentes WEB</h4>      
+      </div>
+      
+    </footer>
+</body>
+</html>

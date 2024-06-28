@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Pets and Cakes</title>
+    <link rel="icon" href="img/gato_fiesta.ico">
+  
+  <script> function validacion(){
+      var formvalido = true;
+  
+      var masct = document.getElementById("mascota").value;
+      var ape = document.getElementById("apellido").value;
+      var nom = document.getElementById("nombre").value;
+      var reg = document.getElementById("registro").checked;
+      var est = document.getElementById("estado").selectedIndex;
+
+  
+      if(masct == null || masct.length == 0){
+          alert("El nombre de la mascota no puede estar vacio");
+          formvalido = false;
+      }
+      
+      if(ape == null || ape.length == 0){
+          alert("Debe completar con su apellido");
+          formvalido = false;
+      }
+
+      if(nom == null || ape.length == 0){
+          alert("Debe completar con su nombre");
+          formvalido = false;
+      }
+
+      if(!reg){
+          alert("No has aceptado las condiciones del sitio");
+          formvalido = false;
+      }
+
+      if(est == null || est == 0){
+          alert("No ha elegido su estado");
+          formvalido = false;
+      }
+
+      var radioseleccionado = false;
+      var genero = document.getElementbyName("genero");
+      for (let index = 0; index < genero.length; index++) {
+        if(genero[index].checked){
+          radioseleccionado = true;
+        }
+      }
+
+      if(!radioseleccionado)
+      {
+        alert("No has marcado el género en el radio");
+        formvalido = false;
+      }
+ 
+      return formvalido;
+  }
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+    
+    <div>
+      <h1 class="titulo_p">PETS AND CAKES</h1>
+      <img id="logo" src="https://i.ibb.co/4PSxckp/logo.jpg" alt="logo">
+    </div>
+    
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienesSomos.html">¿Quiénes Somos?</a></li>
+          <li><a href="contacto.html">Conctacto</a></li>
+          <li><a href="festejos.html">Festejos</a></li>
+        </ul>
+      </nav>
+    </div>
+       
+  </header>
+
+
+  <main>
+
+    <div>
+        <h1>ESTE ES NUESTRO FORMULARIO DE CONTACTO</h1>
+        <p>A través de este formulario puede registrarse en nuestro sitio para permanecer conectado.</p>
+    </div>
+    <div>
+        <img class="imagen" src="https://i.ibb.co/0mJ0Pk7/fiesta-5.jpg" alt="Esta es una imagen">
+    </div>
+
+    <form method="GET" action="#" onsubmit="return validacion()">
+        <label>Mascota: <input type="text" name="mascota" id="mascota"></label>
+        <br>
+        
+        <label>Apellido: <input type="text" name="apellido" id="apellido"></label>
+        
+        <label>Nombre: <input type="text" name="nombre" id="nombre"></label>
+        
+        <label><input type="checkbox" name="registro" id="registro">Acepto las condiciones de registro del sitio</label>
+        
+        <label>Color favorito: <input type="color" name="color"></label>
+       
+        <label>Documento: <input type="number" name="documento"></label>
+        
+        <p>Género:</p>
+        <label><input type="radio" name="genero" id="masculino" value="masculino">HOMBRE</label>
+        <label><input type="radio" name="genero" id="femenino" value="femenino">MUJER</label>
+        <label><input type="radio" name="genero" id="otro" value="otro">OTRO</label>
+        <br>
+        
+        <P>Estado civil:</P>
+        <select name="estado" id="estado">
+            <option value="0">Soltero/a</option>
+            <option value="1">Casado/a</option>
+            <option value="2">Otro</option>
+        </select>
+        
+        <p>Deje su comentario aquí:</p>
+        <textarea name="mensaje" placeholder="Escriba aquí." cols="30" rows="10"></textarea>
+        <br>
+        
+        <input type="submit" value="Enviar" name="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+
+</main>
+
+
+
+<footer>
+  
+    <div class="footer">
+      <h3>Seguinos en las redes</h3>
+      <h4>©Copyright 2024. Todos los derechos reservados.</h4>
+      <h4>By Desarrollos Inteligentes WEB</h4>      
+    </div>
+    
+  </footer>
+</body>
+
+</html>

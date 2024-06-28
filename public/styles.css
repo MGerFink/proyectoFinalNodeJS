@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@keyframes inicio {
+    from{background: #fff78a}
+    to{background: #ff5bae}
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Thasadith', sans-serif;
+  }
+  
+ header{
+    background-color: #ff5bae;
+    padding: 20px;
+    text-align: center;
+    animation: inicio 5s linear 1000ms 2;
+}
+  
+#logo {
+    width: 200px;
+    height: 200px;
+} 
+  
+.titulo_p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff78a;
+    text-align: center;
+}
+  
+p {
+    font-family:"Thasadith", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+  
+nav li {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+  
+nav li a {
+    color: #ffe4cf;
+}
+  
+main {
+    background-color: #ffe4cf;
+    padding: 20px;
+}
+
+.titulo {
+    color: #e72929;
+    text-align: center;
+    font-size: 2rem;
+}
+  
+.contenedor{
+    margin: auto;
+    padding: 20px 0;
+  }
+
+.contenedor_imagenes{
+    display: flex;
+    margin: auto;
+    gap: 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor_texto{
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    overflow: hidden;
+    padding: 5px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    align-items: center;
+}
+
+.footer {
+    background-color: #fffdd7;
+    padding: 20px;
+}
+
+#titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contenedor {
+    background-color:  #EDD5D8;
+    width:100w;
+    padding:20px;
+}
+
+.contenedor p {
+    color: #aa8a7a;
+    font-size: 2.7rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.contenedorFestejo {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1%;
+    margin-top: 6%;
+    gap: 10px;
+  
+    @media screen and (max-width: 991px) and (min-width: 768px){
+          grid-template-columns: 1fr 1fr;
+      };
+  
+    @media screen and (max-width: 767px) and (min-width: 1px){
+          grid-template-columns: 1fr;
+      };
+}
+
+.festejo {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    margin: 10px;
+}
+
+ 
+main div article h5 {
+    font-size: 1.7rem;
+    color: #cd9d85;
+    text-align: center;
+    padding: 2%;
+}
+  
+.festejo p {
+      font-size: 1.5rem;
+      color: #cc805a;
+      text-align: justify;
+      padding: 14%;  
+      font-weight: bold ;
+  }
+    
+.imgfestejo {
+    max-width: 100%;
+    border-radius: 30px;
+    width: 400px;
+    height: 250px;
+}
+
+
+  
+
+
+
+
+
+  
+   
